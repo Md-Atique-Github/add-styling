@@ -1,10 +1,17 @@
+body{
+  background-color: rgb(6, 116, 54);
+}
 .App {
   width: 40%;
   margin: auto;
+  color: rgb(138, 236, 204);
 }
 
 .header {
   text-align: center;
+  border: 2px solid rgb(138, 236, 204);
+  padding: 6px;
+  background-image: linear-gradient(to right, #fa8ffa, #03b6b6);
 }
 
 
@@ -42,3 +49,5 @@
     transform: rotate(360deg);
   }
 }
+
+
