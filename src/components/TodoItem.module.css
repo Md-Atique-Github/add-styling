@@ -8,18 +8,46 @@
   }
   
   .closeBtn {
-    color: red;
-    font-weight: 800;
-    width: auto;
-  height: 40px;
-  font-size: 1.2em;
-  box-shadow: 5px 5px 5px white;
+    color: BLUE;
+    border-color: #503f3f;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
   
   }
   
   .closeBtn:hover {
     cursor: pointer;
+    background-color: red;
   }
   .completed {
     text-decoration: line-through;
   }
+.itemContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-family: serif;
+  font-size: 18px;
+  box-shadow: -13px 6px 5px brown;
+  border-radius: 12px;
+  color: white;
+}
+
+
+.editBtn{
+
+  color: BLUE;
+  border-color: #503f3f;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.editBtn:hover{
+  background-color: black;
+  color: white;
+}

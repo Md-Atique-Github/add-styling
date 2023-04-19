@@ -10,11 +10,18 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [newTodo, setNewTodo] = useState('');
   const [saving, setSaving] = useState(false);
+  const [ date , setdate] = useState('');
+  
   function onChange(e) {
     const value = e.target.value;
     setNewTodo(value);
+
   }
-  
+  function onChangeDate(e){
+    const value = e.target.value;
+    setdate(value);
+  }
+   
   function removeTodo(id) {
     setTodos(todos.filter(t => t.id !== id));
   }
@@ -37,6 +44,7 @@ function App() {
     const value = {
       userId: 3,
       id: Math.floor(Math.random() * 10000) + 1,
+      date: date,
       title: newTodo,
       completed: false,
     };
@@ -62,7 +70,7 @@ function App() {
         response.json()
       );
       act (()=>{
-        setTodos(result.slice(0, 5));
+        // setTodos(result.slice(0, 5));
         setLoading(false);
       })
       
@@ -83,8 +91,17 @@ function App() {
         'Saving'
       ) : (
         <form onSubmit={addTodo}>
-          <input type="text" onChange={onChange} />
-          <button type="submit">Add new todo</button>
+        
+          <label>ToDO
+          <input  className='test-feild'  type="text" onChange={onChange} />
+
+          </label>
+      
+          <label> Date
+          <input className='test-feild' type='date'  onChange={onChangeDate}/>
+          </label>
+          
+          <button className='btn' type="submit">Add new todo</button>
         </form>
       )}
     </div>

@@ -18,7 +18,12 @@ const TodoItem = ({ todo, removeHandler, updateTodo }) => (
         >
           {todo.title}
         </label>
+        <label>
+          {todo.date}
+        </label>
       </div>
+      <div>
+      <button  className={styles.editBtn}> Edit</button>
       <button
         className={styles.closeBtn}
         data-testid={`close-btn-${todo.id}`}
@@ -26,6 +31,7 @@ const TodoItem = ({ todo, removeHandler, updateTodo }) => (
       >
         X
       </button>
+      </div>
     </div>
   );
   

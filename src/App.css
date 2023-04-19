@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(6, 116, 54);
+  BACKGROUND-COLOR: black;
 }
 .App {
   width: 40%;
@@ -8,13 +8,18 @@ body{
 }
 
 .header {
+ 
+  box-shadow: 0px 7px 15px white;
+  border: 1px solid white;
   text-align: center;
-  border: 2px solid rgb(138, 236, 204);
-  padding: 6px;
-  background-image: linear-gradient(to right, #fa8ffa, #03b6b6);
+  /* border: 2px solid rgb(138, 236, 204); */
+  padding: 1px;
+  border-radius: 11px;
+  /* background-image: linear-gradient(to right, #fa8ffa, #03b6b6); */
+  color: white;
+  font-size: 58px;
+  font-family: ui-monospace;
 }
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -50,4 +55,41 @@ body{
   }
 }
 
+.test-feild{
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 14px;
+  width: 245px;
+  margin-left: 6%;
+  margin-right: 27px;
+  height: 30px;
+  margin-left: 4px;
 
+
+}
+
+.test-feild :hover{
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 7px 15px white;
+}
+
+.btn{
+
+      color: BLUE;
+    border-color: #503f3f;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 12px;
+    margin-left: 41px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
